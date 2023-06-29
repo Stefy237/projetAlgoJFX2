@@ -1,0 +1,27 @@
+.root {
+	-fx-background-color: #fff;
+}
+
+#accueil {
+	-fx-font: "Arial";
+	-fx-text-fill: #ff0000;
+	-fx-font-size: 25.0px;
+}
+
+.button {
+	-fx-font: "Arial";
+	-fx-font-size: 15.0px;
+	-fx-background-radius: 5px;
+	
+}
+
+.label {
+	-fx-font: "Arial";
+	-fx-font-size: 15.0px;
+	-fx-background-radius: 5px;
+}
+
+.pane {
+	display: block;
+	margin: auto;
+}

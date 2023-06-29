@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="700.0" prefWidth="700.0" spacing="10" alignment="CENTER" 
+	xmlns:fx="http://javafx.com/fxml/1"
+	xmlns="http://javafx.com/javafx/18.0.2.1"
+	fx:controller="application.MainController">
+	<Label id="accueil" text="Voici notre arbre binaire" />
+	
+	<Pane fx:id="treePane" prefHeight="400.0" prefWidth="600.0" />
+	
+	<GridPane hgap="10" vgap="10" alignment="CENTER">
+	
+		<Button onAction="#prefixe" text="Parcours prefixé" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+		<Label fx:id="prefixeResult" GridPane.columnIndex="1" GridPane.rowIndex="0" /> 
+		
+		<Button  onAction="#infixe" text="Parcours infixé" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+		<Label fx:id="infixeResult" GridPane.columnIndex="1" GridPane.rowIndex="1"/> 
+
+		<Button   onAction="#postfixe" text="Parcours postfixé" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+		<Label fx:id="postfixeResult" GridPane.columnIndex="1" GridPane.rowIndex="2" /> 
+		
+</GridPane>
+
+
+</VBox>
